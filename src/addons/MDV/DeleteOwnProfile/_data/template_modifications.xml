@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="account_wrapper" modification_key="mdv_ptdop_add_button_delete" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<!--[XF:settings_links:bottom]-->]]></find>
+    <replace><![CDATA[<xf:css src="mdv_ptdop.less" />
+
+<xf:if is="$xf.visitor.hasPermission('general', 'mdv_ptdop_deleteAccount')">
+	<a class="blockLink mdv_ptdop_btn" data-xf-click="overlay" href="{{ link('account/mdv-delete-profile') }}">
+		{{ phrase('mdv_ptdop_delete_own_profile') }}
+	</a>
+</xf:if>
+$0]]></replace>
+  </modification>
+</template_modifications>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="mdv_ptdop_are_you_sure_you_want_to_delete_your_account" version_id="1000170" version_string="1.0.1"><![CDATA[Are you sure you want to delete your account? This action is irreversible!]]></phrase>
+  <phrase title="mdv_ptdop_delete_own_profile" version_id="1000170" version_string="1.0.1"><![CDATA[Delete profile]]></phrase>
+  <phrase title="permission.general_mdv_ptdop_deleteAccount" version_id="1000170" version_string="1.0.1"><![CDATA[[MDV] Delete own account]]></phrase>
+</phrases>

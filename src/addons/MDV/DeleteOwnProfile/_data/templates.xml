@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="mdv_ptdop.less" version_id="1000170" version_string="1.0.1"><![CDATA[.blockLink.mdv_ptdop_btn 
+{	
+	transition: 0.2s;
+
+	&:hover 
+	{
+		background: @xf-errorBg;
+		color: @xf-errorColor;
+	}
+}]]></template>
+  <template type="public" title="mdv_ptdop_confirm" version_id="1000170" version_string="1.0.1"><![CDATA[<xf:title>{{ phrase('confirm_action') }}</xf:title>
+
+<xf:form ajax="true" action="{{ link('account/mdv-delete-profile') }}" class="block">
+	<div class="block-container">
+		<div class="block-body">
+			<div class="block-row">
+				<xf:inforow rowtype="confirm">
+					{{ phrase("mdv_ptdop_are_you_sure_you_want_to_delete_your_account") }}
+				</xf:inforow>
+			</div>
+			<xf:submitrow icon="confirm" submit="{{ phrase('accept') }}" />
+		</div>
+	</div>
+</xf:form>]]></template>
+</templates>
